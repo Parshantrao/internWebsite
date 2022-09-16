@@ -1,4 +1,4 @@
-// let queryParamArray = ["authorId", "category", "tags", "subcategory"] 
+// let queryParamArray = ["authorId", "category", "tags", "subcategory"]
 // let obj = {
 //   authorId:4556,
 //   cat:"ab"
@@ -26,7 +26,7 @@
 // }
 // console.log(isParamValueEmpty("subcategory","/blogs?tags=&subcategory=&category=caTEGory4"))
 
-// 
+//
 // let obj={a:"",b:"b"}
 // let arr=Object.keys(obj)
 // console.log(arr)
@@ -39,7 +39,6 @@
 // let date=new Date()
 // console.log(date.toTimeString(), date.toLocaleTimeString(), date.toLocaleString(),date.getTimezoneOffset())
 
-
 // var checkArithmeticSubarrays = function(nums, l, r) {
 //     let arr=[]
 //     for(let i=0;i<l.length;i++){
@@ -48,7 +47,7 @@
 //         console.log(arr1)
 //         for(let j=0;j<arr1.length-1;j++){
 //             arr1[j]=arr1[j+1]-arr1[j]
-            
+
 //         }
 //         arr1.pop()
 //         if([...new Set(arr1)].length==1) arr.push(true)
@@ -57,8 +56,6 @@
 //     return arr
 // };
 // console.log(checkArithmeticSubarrays([4,6,5,9,3,7],[0,0,2],[2,3,5]))
-
-
 
 // var CustomStack = function(maxSize) {
 //     this.arr=new Array()
@@ -76,8 +73,6 @@
 // };
 // console.log(CustomStack.prototype.push(5))
 
-
-
 // var findAndReplacePattern = function(words, pattern) {
 //     let n=pattern.length
 //     let p = pattern
@@ -87,17 +82,15 @@
 //         for(let i=0;i<n;i++){
 //             p=p.replaceAll(pattern[i],word[i])
 //             word=word.replaceAll(words[j][i],pattern[i])
-            
+
 //         }
 //         if(p==words[j]) arr.push(p)
 //         p=pattern
 //     }
 //     return arr
-    
+
 // }
 // console.log(findAndReplacePattern(["abc","cba","xyx","yxx","yyx"],"abc"))
-
-
 
 // var sumOfUnique = function(nums) {
 //     let digit =0
@@ -107,7 +100,6 @@
 //     return digit
 // }
 // console.log(sumOfUnique([1,2,3,2]))
-
 
 // var busyStudent = function(startTime, endTime, queryTime) {
 //     let digit=0
@@ -125,7 +117,6 @@
 //     }
 //     return digit
 // };
-
 
 // var maximumUnits = function(boxTypes, truckSize) {
 //    boxTypes.sort((a,b)=>a[1]-b[1])
@@ -146,7 +137,6 @@
 // }
 // console.log(maximumUnits([[5,10],[2,5],[4,7],[3,9]], 10))
 
-
 // function bubbleSort(array) {
 //     var done = false;
 //     while (!done) {
@@ -160,14 +150,13 @@
 //         }
 //       }
 //     }
-  
+
 //     return array;
 //   }
-  
+
 //   var numbers = [12, 10, 15, 11, 14, 13, 9];
 //   bubbleSort(numbers);
 //   console.log(numbers);
-
 
 // var minimumOperations = function(nums) {
 //     let digit=0
@@ -188,7 +177,6 @@
 // };
 // console.log(minimumOperations([1,2,3,4,5]))
 
-
 // const urlRegex = /(https?:\/\/.*\.(?:png|jpg))/
 // console.log(urlRegex.test("https://functionup-stg.s3.ap-south-1.amazonaws.com/thorium/iitd.png"))
 
@@ -204,14 +192,13 @@
 // newObj["new"]="new"
 // console.log(newObj,typeof(newObj))
 
-
 // const isValidString = function(data){
 //     if(Object.prototype.toString.call(data)!="[object String]" || data.trim().length==0){
 //         return false
 //     }
 //     return true
 // }
-// console.log(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test("email1@gmail.co.in"))  
+// console.log(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test("email1@gmail.co.in"))
 
 // let foo = function(a,arr,b){
 //     let repeat=true
@@ -223,7 +210,7 @@
 //                 let a=arr[i]
 //                 arr[i]=arr[i-1]
 //                 arr[i-1]=a
-//             } 
+//             }
 //         }
 //     }
 //     let sum=0,i=0
@@ -237,23 +224,76 @@
 //         if(sum==b) return a
 //         i++
 //     }
-   
+
 //  return  -1
 // }
 // console.log(foo(4,[2,4,4,6],11))
 
+// const foo = async function(data){
+//     // let sum
+//     let a=false
+//     if(a){
+//     for(let i=0;i<data.length;i++){
+//         sum+=data[i]
+//     }   }
+//     return sum
+// }
+// console.log(foo([1,2,5,3]))
+
+// var kthDistinct = function(arr, k) {
+//     let digit=0
+//     for(let i=0;i<arr.length;i++){
+//         let a=arr.indexOf(arr[i])
+//         let b=arr.lastIndexOf(arr[i])
+//         if(a==b) digit++
+//         if(digit==k) return arr[i]
+//     }
+//    return ""
+// };
+// console.log(kthDistinct(["d","b","c","b","c","a"],2));
+
+// var sortByBits = function(arr) {
+//     let arr1=[],digit=0,obj={}
+//     for(let i=0;i<arr.length;i++){
+//         let a=arr[i]
+//         while(a/2!=0){
+//             digit+=a%2
+//             a=Math.floor(a/2)
+//         }
+//         arr1.push(digit)
+//         obj[arr[i]]=digit
+//         digit=0
+//     }
+//     arr.sort((a,b)=>obj[a]-obj[b] )
+
+//     return arr
+// };
+// console.log(sortByBits([2,3,5,7,11,13,17,19]))
 
 
-const foo = async function(data){
-    // let sum
-    let a=false    
-    if(a){
-    for(let i=0;i<data.length;i++){
-        sum+=data[i]
-    }   }
-    return sum
-}
-console.log(foo([1,2,5,3]))
+// var shortestToChar = function(s, c) {
+//     let arr=[]
+//     for(let i=0;i<s.length;i++){
+//         let firstIndex = s.indexOf(c,i)
+//         let lastIndex = s.lastIndexOf(c,i)
+//         console.log(firstIndex,lastIndex)
+//         if(firstIndex>=0&&lastIndex>=0){
+//             arr.push(Math.min(Math.abs(i-firstIndex),Math.abs(i-lastIndex)))
+//         }
+//         else{
+//             if(firstIndex<0) arr.push(Math.abs(i-lastIndex))
+//             else arr.push(Math.abs(i-firstIndex))
+//         }
+//     }
+//     return arr
+// };
+// console.log(shortestToChar("baab","b"))
 
 
+const isMobileNumber = function (data) {
+    const mobileRegex =
+      /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+    return mobileRegex.test(data);
+  }
 
+  console.log(isMobileNumber(5555555555))

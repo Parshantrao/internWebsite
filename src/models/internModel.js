@@ -12,7 +12,7 @@ const internSchema = mongoose.Schema(
 
     email:{type:String, require:true, unique:true, trim:true, lowercase:true},
 
-    mobile:{type:Number, require:true, unique:true},
+    mobile:{type:String, require:true, unique:true},
 
     collegeId:{type:ObjectId, ref:"CollegeModel", require:true},
     

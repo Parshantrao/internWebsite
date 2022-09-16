@@ -111,8 +111,13 @@ const regInternMid = function(req,res,next){
             res.status(400).send({status:false, msg:"mobile required"})
             return
         }
+        if(!validation.isValidString(mobile)){
+            res.status(400).send({status:false, msg:"mobile must contain letters / String only"})
+            return
+        }
+        mobile=mobile.trim()
         if(!validation.isValidMobileNumber(mobile)){
-            res.status(400).send({status:false, msg:"mobile must be valid indian phone number / Numbers only"})
+            res.status(400).send({status:false, msg:"mobile must be valid indian phone number "})
             return
         }
        
