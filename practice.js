@@ -290,10 +290,47 @@
 // console.log(shortestToChar("baab","b"))
 
 
-const isMobileNumber = function (data) {
-    const mobileRegex =
-      /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
-    return mobileRegex.test(data);
-  }
+// const isMobileNumber = function (data) {
+//     const mobileRegex =
+//       /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+//     return mobileRegex.test(data);
+//   }
 
-  console.log(isMobileNumber(5555555555))
+//   console.log(isMobileNumber(5555555555))
+
+// var sortArrayByParityII = function(nums) {
+//     let even=[]
+//     let odd=[]
+//     for(let i=0;i<nums.length;i++){
+//         if(nums[i]%2==0) even.push(nums[i])
+//         else odd.push(nums[i])
+//     }
+//     console.log(even,odd)
+//     for(let i=0;i<nums.length;i++){
+//         if(i%2==0){
+//             let a=even.pop()
+//             nums[i]=a
+//         }
+//         else{
+//             let a=odd.pop()
+//             nums[i]=a
+//         }
+//     }
+//     return nums
+// };
+// console.log(sortArrayByParityII([4,2,5,7]))
+
+// let unique = ["email", "mobile"];
+// let data={email:"dijvnuvfr"}
+//     for (field of unique) {
+//       let emp = {};
+//       emp[field] = data[field];
+//       console.log(emp)
+//     //   let document = await internModel.findOne(emp);
+//     //   if (document) {
+//     //     console.log("jdsnvjidnvn")
+//     //   }
+//     }
+
+
+

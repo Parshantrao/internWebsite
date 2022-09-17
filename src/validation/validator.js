@@ -18,7 +18,7 @@ const isValidString = function(data){
 }
 
 const isValidMobileNumber = function(data){
-    if(Object.prototype.toString.call(data)!="[object Number]" || !mobileRegex.test(data)){
+    if(Object.prototype.toString.call(data)!="[object String]" || !mobileRegex.test(data)){
         return false
     }
     return true
