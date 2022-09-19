@@ -10,6 +10,7 @@ const validation = require("../validation/validator")
 // - Return HTTP status 400 for an invalid request with a response body like [this](#error-response-structure)
 
 const registerCollege = async function(req,res){
+    res.setHeader('Access-Control-Allow-Origin','*')
     try{
         const modifiedRequestData = req.modifiedRequestData
 
@@ -43,6 +44,7 @@ const registerCollege = async function(req,res){
 
 
 const collegeDetails = async function(req,res){
+    res.setHeader('Access-Control-Allow-Origin','*')
     try{
        /// Check if query param is given or not
        if(Object.keys(req.query).length==0){

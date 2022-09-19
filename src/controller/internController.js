@@ -10,6 +10,7 @@ const validation = require("../validation/validator")
 // - Return HTTP status 400 for an invalid request with a response body like [this](#error-response-structure)
 
 const registerIntern = async function(req,res){
+    res.setHeader('Access-Control-Allow-Origin','*')
     try{
         const modifiedRequestData = req.modifiedRequestData 
 
